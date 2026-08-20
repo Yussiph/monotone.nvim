@@ -1,38 +1,3 @@
---
--- m o n o t o n e
---
---
--- Copyright 2021 Kim Silkebækken
---
--- Permission is hereby granted, free of charge, to any person obtaining a copy
--- of this software and associated documentation files (the "Software"), to
--- deal in the Software without restriction, including without limitation the
--- rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
--- sell copies of the Software, and to permit persons to whom the Software is
--- furnished to do so, subject to the following conditions:
---
--- The above copyright notice and this permission notice shall be included in
--- all copies or substantial portions of the Software.
---
--- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
--- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
--- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
--- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
--- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
--- FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
--- IN THE SOFTWARE.
---
---
--- Lua configuration example:
---
---   vim.g.monotone_h = 85
---   vim.g.monotone_s = 30
---   vim.g.monotone_l = 50
---   vim.g.monotone_contrast = 100
---   vim.g.monotone_true_monotone = true
---   vim.o.background = 'light'
---
-
 local lush = require("lush")
 local hsl = lush.hsl
 
@@ -162,7 +127,7 @@ return lush(function()
 		Float({}), --    a floating point constant: 2.3e10
 
 		Identifier({ gui = "italic" }), -- (preferred) any variable name
-		Function({ gui = "bold" }), -- function name (also: methods for classes)
+		-- Function({ gui = "bold" }), -- function name (also: methods for classes)
 
 		Statement({ gui = "bold,italic" }), -- (preferred) any statement
 		Conditional({}), --  if, then, else, endif, switch, etc.
@@ -178,7 +143,7 @@ return lush(function()
 		Macro({}), --    same as Define
 		PreCondit({}), --  preprocessor #if, #else, #endif, etc.
 
-		Type({ gui = "bold" }), -- (preferred) int, long, char, etc.
+		-- Type({ gui = "bold" }), -- (preferred) int, long, char, etc.
 		StorageClass({}), -- static, register, volatile, etc.
 		Structure({}), --  struct, union, enum, etc.
 		Typedef({}), --  A typedef
@@ -191,12 +156,12 @@ return lush(function()
 		Debug({}), --    debugging statements
 
 		Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
-		Bold({ gui = "bold" }),
+		-- Bold({ gui = "bold" }),
 		Italic({ gui = "italic" }),
 
 		-- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
 
-		Todo({ fg = hl2, gui = "bold,italic" }), -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
+		Todo({ fg = hl2, gui = "bold" }), -- (preferred) anything that needs extra attention; mostly the keywords TODO FIXME and XXX
 
 		LspReferenceText({ gui = "underline", sp = blue }), -- used for highlighting "text" references
 		LspReferenceRead({ gui = "underline", sp = s.normal }), -- used for highlighting "read" references
