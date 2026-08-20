@@ -143,7 +143,7 @@ return lush(function()
 		Macro({}), --    same as Define
 		PreCondit({}), --  preprocessor #if, #else, #endif, etc.
 
-		-- Type({ gui = "bold" }), -- (preferred) int, long, char, etc.
+		Type({ }), -- (preferred) int, long, char, etc.
 		StorageClass({}), -- static, register, volatile, etc.
 		Structure({}), --  struct, union, enum, etc.
 		Typedef({}), --  A typedef
