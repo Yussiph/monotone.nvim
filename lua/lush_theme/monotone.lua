@@ -156,7 +156,7 @@ return lush(function()
 		Debug({}), --    debugging statements
 
 		Underlined({ gui = "underline" }), -- (preferred) text that stands out, HTML links
-		-- Bold({ gui = "bold" }),
+		Bold({ gui = "normal" }),
 		Italic({ gui = "italic" }),
 
 		-- Ignore         { }, -- (preferred) left blank, hidden  |hl-Ignore|
