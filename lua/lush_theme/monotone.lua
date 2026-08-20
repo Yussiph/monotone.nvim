@@ -145,7 +145,7 @@ return lush(function()
 		StatusLineNC({ fg = s[3], bg = s[9] }), -- status lines of not-current windows Note: if this is equal to "StatusLine" Vim will use "^^^" in the status line of the current window.
 		TabLine({ fg = s[3] }), -- tab pages line, not active tab page label
 		TabLineFill({ fg = s[3] }), -- tab pages line, where there are no labels
-		TabLineSel({ fg = s[1], gui = "bold" }), -- tab pages line, active tab page label
+		TabLineSel({ fg = s[1] }), -- tab pages line, active tab page label
 		Title({ gui = "bold" }), -- titles for output from ":set all", ":autocmd" etc.
 		Visual({ fg = s.inv, bg = s.normal }), -- Visual mode selection
 		VisualNOS({}), -- Visual mode selection when vim is "Not Owning the Selection".
