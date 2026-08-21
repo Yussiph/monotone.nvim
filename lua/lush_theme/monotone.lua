@@ -56,7 +56,7 @@ return lush(function()
 		SyntaxInfo({ sp = blue, gui = "undercurl" }),
 		SyntaxHint({ sp = green, gui = "undercurl" }),
 
-		Comment({ fg = s[6], gui = "italic" }), -- any comment
+		Comment({ fg = s[6] }), -- any comment
 		ColorColumn({ bg = s[6] }), -- used for the columns set with 'colorcolumn'
 		Conceal({}), -- placeholder characters substituted for concealed text (see 'conceallevel')
 		Cursor({ bg = hl1 }), -- character under the cursor
