@@ -127,7 +127,7 @@ return lush(function()
 		Float({}), --    a floating point constant: 2.3e10
 
 		Identifier({ gui = "italic" }), -- (preferred) any variable name
-		-- Function({ gui = "bold" }), -- function name (also: methods for classes)
+		Function({ gui = "bold" }), -- function name (also: methods for classes)
 
 		Statement({ gui = "bold,italic" }), -- (preferred) any statement
 		Conditional({}), --  if, then, else, endif, switch, etc.
