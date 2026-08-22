@@ -120,7 +120,7 @@ return lush(function()
 		WildMenu({ fg = s[6], fg = s.normal }), -- current match in 'wildmenu' completion
 
 		Constant({ gui = "underline", sp = "fg" }), -- (preferred) any constant
-		String({ fg = s[2] }), --   a string constant: "this is a string"
+		String({ fg = s.normal }), --   a string constant: "this is a string"
 		Character({}), --  a character constant: 'c', '\n'
 		Number({}), --   a number constant: 234, 0xff
 		Boolean({ gui = "italic" }), --  a boolean constant: TRUE, false
